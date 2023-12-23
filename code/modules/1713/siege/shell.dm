@@ -363,11 +363,6 @@
 	name = "Xylyl Bromide Shell"
 	icon_state = "shell_xb"
 
-/obj/item/cannon_ball/shell/gas/zyklon_b
-	reagent_payload = "zyclon_b"
-	name = "Zyklon B Shell"
-	icon_state = "shell_xb"
-
 // Nuclear
 
 /obj/item/cannon_ball/shell/tank/nuclear
