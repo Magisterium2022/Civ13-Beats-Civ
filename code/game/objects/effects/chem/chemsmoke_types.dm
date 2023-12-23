@@ -26,17 +26,3 @@
 
 /obj/effect/effect/smoke/chem/payload/phosgene
 	reagent_id = "phosgene_gas"
-
-/obj/effect/effect/smoke/chem/payload/zyklon_b
-	reagent_id = "zyklon_b"
-
-// special behavior designed for gas chambers
-/obj/effect/effect/smoke/chem/payload/zyklon_b/Move()
-	. = ..()
-	if (.)
-		for (var/atom/movable/AM in get_turf(src))
-			if (!istype(AM, /obj/effect/effect/smoke/chem))
-				reagents.splash(AM, splash_amount, copy = TRUE)
-		if (loc == destination)
-			bound_width = 96
-			bound_height = 96
