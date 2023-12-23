@@ -70,7 +70,7 @@
 		return
 
 /obj/item/stack/ammopart/casing/grenade/proc/make_chemical(var/obj/item/weapon/reagent_containers/CH, var/mob/living/user)
-	for (var/reg in list("xylyl_bromide","mustard_gas","white_phosphorus_gas","chlorine_gas","phosgene_gas","zyklon_b", "hexachloroetane", "napalm", "magnesium"))
+	for (var/reg in list("xylyl_bromide","mustard_gas","white_phosphorus_gas","chlorine_gas","phosgene_gas", "hexachloroetane", "napalm", "magnesium"))
 		if (CH.reagents.has_reagent(reg, 10))
 			CH.reagents.remove_reagent(reg, 10)
 			var/turf/T = get_turf(user)
