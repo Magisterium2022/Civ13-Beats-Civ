@@ -697,13 +697,6 @@ datum/admins/proc/print_chemical_reactions()
 	required_reagents = list("carbon" = 6, "hydrogen" = 4, "bromine" = 1)
 	result_amount = 5
 
-/datum/chemical_reaction/zyklon_b
-	name = "Zyklon B"
-	id = "zyklon_b"
-	result = "zyklon_b"
-	required_reagents = list("cyanide" = 10, "hydrogen" = 5)
-	result_amount = 5
-
 /datum/chemical_reaction/cyanide
 	name = "Cyanide"
 	id = "cyanide"
