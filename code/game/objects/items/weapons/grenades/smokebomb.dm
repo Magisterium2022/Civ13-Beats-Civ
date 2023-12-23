@@ -334,9 +334,6 @@
 	name = "xylyl bromide gas grenade"
 	stype = /datum/effect/effect/system/smoke_spread/bad/chem/payload/xylyl_bromide
 	icon_state = "riot"
-/obj/item/weapon/grenade/chemical/zyklon_b
-	name = "Zyklon B gas grenade"
-	stype = /datum/effect/effect/system/smoke_spread/bad/chem/payload/zyklon_b
 
 /obj/item/weapon/grenade/chemical/cs_gas
 	name = "CS gas grenade"
