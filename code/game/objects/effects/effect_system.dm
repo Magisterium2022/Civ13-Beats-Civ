@@ -388,9 +388,6 @@ steam.start() -- spawns the effect
 /datum/effect/effect/system/smoke_spread/bad/chem/payload/csgas
 	smoke_type = /obj/effect/effect/smoke/chem/payload/csgas
 
-/datum/effect/effect/system/smoke_spread/bad/chem/payload/zyklon_b
-	smoke_type = /obj/effect/effect/smoke/chem/payload/zyklon_b
-
 /datum/effect/effect/system/smoke_spread/sleepy
 	smoke_type = /obj/effect/effect/smoke/sleepy
 
