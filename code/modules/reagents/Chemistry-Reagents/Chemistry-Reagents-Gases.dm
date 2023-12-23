@@ -210,34 +210,3 @@ var/mob/living/human/next_gas_flesh_message = -1
 /datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
 		suffocation(L, get_severity(amount)*4)
-
-
-/datum/reagent/toxin/zyklon_b
-	name = "Zyklon B"
-	id = "zyklon_b"
-	description = "A gas used for delousing. Would require unrealistically high concentrations to harm a human."
-	reagent_state = GAS
-	color = "#00a0b0"
-	strength = FALSE
-	touch_met = FALSE
-	alpha = 50
-//	meltdose = 4
-
-/datum/reagent/toxin/zyklon_b/touch_mob(var/mob/living/L, var/amount)
-	if (istype(L))
-		internal_damage(L, get_severity(amount)*4)
-	if (istype(L, /mob/living/simple_animal/cockroach) || istype(L, /mob/living/simple_animal/mosquito) || istype(L, /mob/living/simple_animal/fly))
-		L.death()
-
-/datum/reagent/toxin/zyklon_b/affect_ingest(var/mob/living/human/M, var/alien, var/removed)
-
-	..(M, alien, removed)
-
-/datum/reagent/toxin/zyklon_b/affect_touch(var/mob/living/human/M, var/alien, var/removed)
-
-
-	..(M, alien, removed)
-
-/datum/reagent/toxin/zyklon_b/affect_blood(var/mob/living/human/M, var/alien, var/removed)
-
-	..(M, alien, removed)
